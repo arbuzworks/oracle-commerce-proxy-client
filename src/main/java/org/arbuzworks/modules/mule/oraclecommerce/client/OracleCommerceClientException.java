@@ -7,8 +7,6 @@ package org.arbuzworks.modules.mule.oraclecommerce.client;
 
 /**
  * Signals that an OracleCommerceProxyClient exception has occurred.
- *
- * @author Vladimir Pinko <vladimir.pinko@gmail.com>
  */
 public class OracleCommerceClientException extends Exception {
 	private final String thirdPartyCode;
