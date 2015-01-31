@@ -1,0 +1,77 @@
+<user:user xmlns:user="http://www.atg.com/ns/UserProfiles/user" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.atg.com/ns/UserProfiles/user UserProfiles+user.xsd " ID="user1" repositoryId="1">
+	<user:user.middleName xsi:nil="true" />
+	<user:user.abandonedOrders xsi:nil="true" />
+	<user:user.defaultCarrier xsi:nil="true" />
+	<user:user.avgOrderAmt xsi:type="double">0.0</user:user.avgOrderAmt>
+	<user:user.gender xsi:type="string"><![CDATA[female]]></user:user.gender>
+	<user:user.storeCreditAuthorized xsi:type="boolean">true</user:user.storeCreditAuthorized>
+	<user:user.realmId xsi:nil="true" />
+	<user:user.derivedOrderPriceLimit xsi:nil="true" />
+	<user:user.emailStatus xsi:type="string"><![CDATA[unknown]]></user:user.emailStatus>
+	<user:user.receiveEmail xsi:type="string"><![CDATA[yes]]></user:user.receiveEmail>
+	<user:user.email xsi:nil="true" />
+	<user:user.password xsi:type="string"><![CDATA[11cd857261c126c5877acebdc829674f74b319e1]]></user:user.password>
+	<user:user.allPreferredVendors xsi:nil="true" />
+	<user:user.myCreditCardAuthorized xsi:type="boolean">true</user:user.myCreditCardAuthorized>
+	<user:user.slotInstances xsi:nil="true" />
+	<user:user.abandonedOrderCount xsi:type="integer">0</user:user.abandonedOrderCount>
+	<user:user.scenarioValues xsi:nil="true" />
+	<user:user.myGiftCertificateAuthorized xsi:type="boolean">true</user:user.myGiftCertificateAuthorized>
+	<user:user.allowPartialShipment xsi:type="boolean">false</user:user.allowPartialShipment>
+	<user:user.currentLocation xsi:type="string"><![CDATA[unknown]]></user:user.currentLocation>
+	<user:user.myInvoiceRequestAuthorized xsi:type="boolean">true</user:user.myInvoiceRequestAuthorized>
+	<user:user.numOfOrders xsi:type="integer">0</user:user.numOfOrders>
+	<user:user.giftCertificateAuthorized xsi:type="boolean">true</user:user.giftCertificateAuthorized>
+	<user:user.locale xsi:type="string"><![CDATA[unset]]></user:user.locale>
+	<user:user.userType xsi:nil="true" />
+	<user:user.securityStatus xsi:type="integer">0</user:user.securityStatus>
+	<user:user.autoLogin xsi:type="boolean">false</user:user.autoLogin>
+	<user:user.lastName xsi:nil="true" />
+	<user:user.member xsi:type="boolean">false</user:user.member>
+	<user:user.markers xsi:nil="true" />
+	<user:user.description xsi:nil="true" />
+	<user:user.dateOfBirth xsi:nil="true" />
+	<user:user.derivedApprovalRequired xsi:type="boolean">true</user:user.derivedApprovalRequired>
+	<user:user.expressCheckout xsi:type="boolean">false</user:user.expressCheckout>
+	<user:user.registrationDate xsi:type="timestamp">2014-09-23T05:23:12.0</user:user.registrationDate>
+	<user:user.approvalRequired xsi:type="boolean">true</user:user.approvalRequired>
+	<user:user.preferredVendors xsi:nil="true" />
+	<user:user.passwordKeyDerivationFunction xsi:type="string"><![CDATA[5]]></user:user.passwordKeyDerivationFunction>
+	<user:user.creditCards xsi:nil="true" />
+	<user:user.scenarioInstances xsi:nil="true" />
+	<user:user.businessProcessMarkers xsi:nil="true" />
+	<user:user.myStoreCreditAuthorized xsi:type="boolean">true</user:user.myStoreCreditAuthorized>
+	<user:user.wishlist xsi:type="itemRef" componentType="gift-list">
+		<user:gift-list ID="gift-listgl20002" repositoryId="gl20002">
+			<user:gift-list.giftlistItems xsi:nil="true" />
+			<user:gift-list.description xsi:nil="true" />
+			<user:gift-list.published xsi:type="boolean">false</user:gift-list.published>
+			<user:gift-list.eventType xsi:type="string"><![CDATA[other]]></user:gift-list.eventType>
+			<user:gift-list.eventName xsi:nil="true" />
+			<user:gift-list.siteId xsi:nil="true" />
+			<user:gift-list.instructions xsi:nil="true" />
+			<user:gift-list.specialInstructions xsi:nil="true" />
+			<user:gift-list.creationDate xsi:type="timestamp">2014-09-23T17:24:20.0</user:gift-list.creationDate>
+			<user:gift-list.public xsi:type="boolean">false</user:gift-list.public>
+			<user:gift-list.eventDate xsi:nil="true" />
+			<user:gift-list.comments xsi:nil="true" />
+			<user:gift-list.lastModifiedDate xsi:nil="true" />
+		</user:gift-list>
+	</user:user.wishlist>
+	<user:user.login xsi:type="string"><![CDATA[arbuzworks]]></user:user.login>
+	<user:user.lastEmailed xsi:nil="true" />
+	<user:user.creditCardAuthorized xsi:type="boolean">true</user:user.creditCardAuthorized>
+	<user:user.invoiceRequestAuthorized xsi:type="boolean">true</user:user.invoiceRequestAuthorized>
+	<user:user.lastActivity xsi:type="timestamp">2014-09-26T17:27:38.0</user:user.lastActivity>
+	<user:user.orderPriceLimit xsi:nil="true" />
+	<user:user.activePromotions xsi:nil="true" />
+	<user:user.mailings xsi:nil="true" />
+	<user:user.passwordSalt xsi:type="string">
+		<![CDATA[916733f9eb3cf0de01a26528f871a4e12f30dd8a]]></user:user.passwordSalt>
+	<user:user.generatedPassword xsi:type="boolean">false</user:user.generatedPassword>
+	<user:user.firstName xsi:nil="true" />
+	<user:user.daytimeTelephoneNumber xsi:nil="true" />
+	<user:user.previousPasswords xsi:nil="true" />
+	<user:user.lastPasswordUpdate xsi:type="timestamp">2014-09-23T05:23:11.0</user:user.lastPasswordUpdate>
+</user:user>

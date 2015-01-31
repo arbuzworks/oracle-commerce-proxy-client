@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://www.atg.com/atg.security" xmlns:ns2="http://www.atg.com/atg.repository" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.atg.com/webservices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.atg.com/webservices">
+<types>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://www.atg.com/webservices">
+<complexType name="ArrayOfString">
+<complexContent>
+<restriction base="soap-enc:Array">
+<attribute ref="soap-enc:arrayType" wsdl:arrayType="string[]"/>
+</restriction>
+</complexContent>
+</complexType>
+</schema>
+</types>
+<import location="atg.security.wsdl" namespace="http://www.atg.com/atg.security"/>
+<import location="atg.repository.wsdl" namespace="http://www.atg.com/atg.repository"/>
+<message name="performRQLQueryInput">
+<part name="RepositoryComponentPath" type="xsd:string"/>
+<part name="ItemDescriptorName" type="xsd:string"/>
+<part name="RQLString" type="xsd:string"/>
+</message>
+<message name="performRQLQueryOutput">
+<part name="return" type="tns:ArrayOfString"/>
+</message>
+<message name="SecurityException">
+<part name="SecurityException" type="ns1:SecurityException"/>
+</message>
+<message name="RepositoryException">
+<part name="RepositoryException" type="ns2:RepositoryException"/>
+</message>
+<portType name="PerformRQLQuerySEI">
+<operation name="performRQLQuery">
+<input message="tns:performRQLQueryInput"/>
+<output message="tns:performRQLQueryOutput"/>
+<fault message="tns:SecurityException" name="SecurityException"/>
+<fault message="tns:RepositoryException" name="RepositoryException"/>
+</operation>
+</portType>
+<binding name="PerformRQLQuerySEIBinding" type="tns:PerformRQLQuerySEI">
+<operation name="performRQLQuery">
+<input>
+<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.atg.com/webservices" use="encoded"/>
+</input>
+<output>
+<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.atg.com/webservices" use="encoded"/>
+</output>
+<fault name="SecurityException">
+<soap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.atg.com/webservices" use="encoded"/>
+</fault>
+<fault name="RepositoryException">
+<soap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.atg.com/webservices" use="encoded"/>
+</fault>
+<soap:operation soapAction=""/>
+</operation>
+<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+</binding>
+<service name="PerformRQLQuerySEIService">
+<port binding="tns:PerformRQLQuerySEIBinding" name="PerformRQLQuerySEIPort">
+<soap:address location="http://76.24.254.239:8080/repository/generic/performRQLQuery/performRQLQuery"/>
+</port>
+</service>
+</definitions>
